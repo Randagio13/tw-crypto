@@ -9,5 +9,10 @@ export default defineConfig({
   site: "https://twcrypto.watch/",
   integrations: [tailwind(), icon()],
   output: "server",
-  adapter: vercel(),
+  adapter: vercel({
+    imageService: true,
+    webAnalytics: {
+      enabled: true,
+    }
+  }),
 });
