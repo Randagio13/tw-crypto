@@ -15,4 +15,8 @@ export default defineConfig({
       enabled: true,
     }
   }),
+  image: {
+    // Example: Use a custom image endpoint
+    endpoint: './src/assets/',
+  },
 });
