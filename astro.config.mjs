@@ -8,7 +8,7 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://twcrypto.watch/",
   integrations: [tailwind(), icon()],
-  output: "server",
+  output: "static",
   adapter: vercel({
     imageService: true,
     webAnalytics: {
