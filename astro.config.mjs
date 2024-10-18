@@ -8,9 +8,11 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://twcrypto.watch/",
   integrations: [tailwind(), icon()],
-  output: "static",
+  output: "server",
   adapter: vercel({
+    isr: true,
     imageService: true,
+    devImageService: 'squoosh',
     webAnalytics: {
       enabled: true,
     }
