@@ -6,7 +6,8 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://twcrypto.watch/",
+  // site: "https://twcrypto.watch/",
+  site: "https://twcrypto-watch.vercel.app/",
   integrations: [tailwind(), icon()],
   output: "hybrid",
   adapter: vercel({
