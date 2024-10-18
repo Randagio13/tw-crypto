@@ -12,7 +12,7 @@ export default defineConfig({
   adapter: vercel({
     isr: true,
     imageService: true,
-    devImageService: 'squoosh',
+    devImageService: 'sharp',
     webAnalytics: {
       enabled: true,
     }
