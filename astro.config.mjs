@@ -1,6 +1,6 @@
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
-import { defineConfig } from "astro/config";
+import { defineConfig, sharpImageService } from "astro/config";
 
 import vercel from "@astrojs/vercel/static";
 
@@ -14,5 +14,8 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     }
-  })
+  }),
+  image: {
+    service: sharpImageService(),
+  }
 });
