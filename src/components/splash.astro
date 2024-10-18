@@ -35,13 +35,12 @@ const sizes = '(min-width: 640px) 42vw, 67vw'
     >
       <Image
         class="h-full w-full object-cover"
-        src="/astronaut.png"
-        widths={widths}
+        src="/assets/astronaut.png"
+        width={widths[0]}
+        height={widths[1]}
         sizes={sizes}
         loading="eager"
         alt="A floating astronaut in a space suit"
-        decoding="async"
-        loading="lazy"
       />
     </div>
   </div>
