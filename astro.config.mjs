@@ -14,9 +14,5 @@ export default defineConfig({
     webAnalytics: {
       enabled: true,
     }
-  }),
-  image: {
-    // Example: Use a custom image endpoint
-    endpoint: './src/assets/',
-  },
+  })
 });
