@@ -1,13 +1,9 @@
 ---
-import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
-import astronaut from '../assets/astronaut.png'
 import HeroImage from '~/components/hero-image.astro'
+import AstronautImage from '~/components/astronaut-image.astro'
 import Starfield from '~/components/starfield.astro'
 import GitHubCorner from './github-corner.astro'
-
-const widths = [450, 800]
-const sizes = '(min-width: 640px) 42vw, 67vw'
 ---
 
 <section class="relative h-full bg-black">
@@ -33,13 +29,7 @@ const sizes = '(min-width: 640px) 42vw, 67vw'
       id="astronaut"
       class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
-      <Image
-        class="h-full w-full object-cover"
-        src={astronaut}
-        widths={widths}
-        sizes={sizes}
-        alt="A floating astronaut in a space suit"
-      />
+      <AstronautImage />
     </div>
   </div>
 </section>
