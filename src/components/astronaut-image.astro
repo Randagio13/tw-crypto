@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets'
+import astronautImage from '~/assets/astronaut.png'
+
+// const widths = [450, 800]
+const sizes = '(min-width: 640px) 42vw, 67vw'
+---
+
+<Image
+  class="h-full w-full object-cover"
+  src={astronautImage}
+  alt="A floating astronaut in a space suit"
+  sizes={sizes}
+/>
